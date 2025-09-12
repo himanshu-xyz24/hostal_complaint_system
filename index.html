@@ -2,34 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Student Dashboard - Hostel Complaint System</title>
+  <title>Hostel Complaint System</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>🏠 Student Complaint Dashboard</h1>
-    
-    <section class="form-section">
-      <h2>Submit a Complaint</h2>
-      <form id="complaintForm">
-        <input type="text" id="title" placeholder="Complaint Title" required>
-        <select id="category">
-          <option>Plumbing</option>
-          <option>Electricity</option>
-          <option>Cleaning</option>
-        </select>
-        <textarea id="description" placeholder="Describe the issue..." required></textarea>
-        <button type="submit">Submit Complaint</button>
-      </form>
-    </section>
 
-    <section class="list-section">
-      <h2>Your Complaints</h2>
-      <ul id="complaintList"></ul>
-    </section>
-  </div>
-  <script window.location.href="login.html";
-    src="script.js"></script>
-</body>
-</html>
+    <!-- Login View -->
+    <div id="loginView">
+      <h1>🔑 Login</h1>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Enter username" required>
+        <select id="role">
+          <option value="student">Student</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <!-- Student Dashboard -->
+    <div id="studentView" style="display:none;">
+      <h1>🏠 Student Dashboard</h1>
+      <button onclick="logout()">Logout</button>
+      <section class="form-section">
+        <h2>Submit a Complaint</h2>
+        <form id="complaintForm">
+          <input type="text" id="title" placeholder="Complaint Title" required>
+          <select id="category">
+            <option>Plumbing</option>
+            <option>Electricity</option>
+            <option>Cleaning</option>
+          </select>
+          <textarea id="description" placeholder="Describe the issue..." required></textarea>
+          <button type="submit">Submit Complaint</button>
+        </form>
+      </section>
+      <section class="list-section">
+        <h2>Your Complaints</h2>
+        <ul id="complaintList"></ul>
+      </section>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="adminView" style="display:none;">
 
