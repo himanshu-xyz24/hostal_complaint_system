@@ -17,7 +17,7 @@ A simple web-based system to streamline reporting and resolving issues in hostel
 
 ## 🌐 Live Demo
 👉 Hosted on **GitHub Pages**:  
-[https://YOUR_USERNAME.github.io/hostel-complaint-system/](https://YOUR_USERNAME.github.io/hostel-complaint-system/)
+[https://himanshu-xyz24.github.io/hostel-complaint-system/](https://YOUR_USERNAME.github.io/hostel-complaint-system/)
 
 ## 📄 License
 This project is licensed under the MIT License.
