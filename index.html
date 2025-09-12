@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard - Hostel Complaint System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🏠 Student Complaint Dashboard</h1>
+    
+    <section class="form-section">
+      <h2>Submit a Complaint</h2>
+      <form id="complaintForm">
+        <input type="text" id="title" placeholder="Complaint Title" required>
+        <select id="category">
+          <option>Plumbing</option>
+          <option>Electricity</option>
+          <option>Cleaning</option>
+        </select>
+        <textarea id="description" placeholder="Describe the issue..." required></textarea>
+        <button type="submit">Submit Complaint</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Your Complaints</h2>
+      <ul id="complaintList"></ul>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

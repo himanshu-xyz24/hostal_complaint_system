@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - Hostel Complaint System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🛠 Admin Dashboard</h1>
+
+    <div class="filter-section">
+      <label for="statusFilter">Filter by Status:</label>
+      <select id="statusFilter" onchange="applyFilter()">
+        <option value="All">All</option>
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Resolved">Resolved</option>
+      </select>
+
+      <input type="text" id="searchBar" placeholder="Search by title..." onkeyup="applyFilter()">
+    </div>
+
+    <h2>All Complaints</h2>
+    <ul id="adminComplaintList"></ul>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
